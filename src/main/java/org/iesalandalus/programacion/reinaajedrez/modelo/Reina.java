@@ -55,10 +55,10 @@ public class Reina {
 		} 
 		
 
-		switch (direccion.toString()) { 
-		if (pasos <1 || pasos>8 && direccion==null) {
-			throw new  OperationNotSupportedException();
-		}
+		switch (direccion.toString()) {
+		
+		
+		
 		case "NORTE":
 			this.posicion = new Posicion(posicion.getFila() + pasos, posicion.getColumna());
 			break;
@@ -83,6 +83,7 @@ public class Reina {
 		case "NOROESTE":
 			this.posicion = new Posicion(posicion.getFila() + pasos, (char) (posicion.getColumna() - pasos));
 			break;
+			
 		}
 
 	}
